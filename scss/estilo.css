@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+.cajanav {
+  grid-area: navegador;
+  border-bottom: 3px white solid;
+  text-align: center;
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  background-image: url(../Imágenes/FondoNaranja2.jpg);
+  z-index: 5;
+}
+.cajanav li {
+  display: inline;
+}
+.cajanav li a {
+  color: cornsilk;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  transition: all 1s;
+  display: inline;
+  font-family: "Raleway";
+}
+.cajanav li a:hover {
+  font-style: bold;
+  font-size: 18px;
+}
+
+.index {
+  grid-template-areas: "navegador navegador navegador navegador" "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal" "separadorWaves separadorWaves separadorWaves separadorWaves" "programas programas programas programas" "calendario calendario calendario calendario" "amigos amigos testimonios testimonios" "contacto contacto contacto contacto";
+}
+
+.cajaPrincipal {
+  grid-area: cajaPrincipal;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 34.5rem;
+  border-bottom: 3px solid white;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cajaPrincipal video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -5;
+  height: 150%;
+  filter: brightness(80%);
+}
+.cajaPrincipal .cajaTitulo {
+  display: inline-block;
+  width: 60%;
+}
+.cajaPrincipal .cajaTitulo h2 {
+  font-size: 2rem;
+}
+.cajaPrincipal .logoTitulo {
+  height: 14rem;
+}
+
+.separadorWaves {
+  grid-area: separadorwaves;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 192px;
+}
+.separadorWaves .waves {
+  transform: scale(1.6326, 0.5);
+  z-index: -2;
+}
+
+.programas {
+  grid-area: programas;
+  text-align: center;
+  height: 30rem;
+}
+.programas .cuadrosProgram {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 24rem;
+  padding-top: 1rem;
+}
+.programas .program {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  border: solid white 3px;
+  border-radius: 10px;
+  height: 21rem;
+  padding: 0.3rem;
+  transition: all 0.5s;
+}
+.programas .program:hover {
+  transform: scale(1.1, 1.1);
+}
+.programas .program h4 {
+  font-family: "Quicksand";
+  color: white;
+  font-size: 1.3rem;
+}
+.programas img {
+  height: 15rem;
+}
+
+.calendario {
+  grid-area: calendario;
+  height: 34.5rem;
+  text-align: center;
+}
+
+.amigos {
+  grid-area: amigos;
+  height: 600px;
+  width: 612px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(to left bottom, white, rgb(188, 187, 187));
+  border-top-right-radius: 290px;
+  border-bottom-right-radius: 290px;
+  padding-right: 19px;
+  justify-content: space-evenly;
+}
+.amigos h3 {
+  color: rgb(224, 147, 3);
+}
+.amigos .partners {
+  position: relative;
+  height: 50%;
+  filter: blur(10px);
+}
+
+.testimonios {
+  grid-area: testimonios;
+  height: 600px;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom, white, rgb(188, 187, 187));
+  border-top-left-radius: 290px;
+  border-bottom-left-radius: 290px;
+  width: 612px;
+  padding-right: 19.5px;
+  justify-content: space-evenly;
+}
+.testimonios h3 {
+  color: rgb(224, 147, 3);
+}
+.testimonios .partners {
+  position: relative;
+  height: 50%;
+  filter: blur(10px);
+}
+
+.contacto {
+  grid-area: contacto;
+}
+.contacto .qr {
+  transform: scale(0.3, 0.3);
+}
+
+.cajanav {
+  grid-area: navegador;
+  border-bottom: 3px white solid;
+  text-align: center;
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  background-image: url(../Imágenes/FondoNaranja2.jpg);
+  z-index: 5;
+}
+.cajanav li {
+  display: inline;
+}
+.cajanav li a {
+  color: cornsilk;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  transition: all 1s;
+  display: inline;
+  font-family: "Raleway";
+}
+.cajanav li a:hover {
+  font-style: bold;
+  font-size: 18px;
+}
+
+.descripcion {
+  color: rgb(235, 235, 235);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../Imágenes/FondoNaranja2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body h1 {
+  font-style: "Quicksand";
+  font-size: 4rem;
+  color: white;
+}
+body h2 {
+  font-style: "Quicksand";
+  font-size: 2.5rem;
+  color: white;
+}
+body h3 {
+  font-family: "Raleway";
+  font-size: 1.5rem;
+  color: white;
+}
+body p {
+  font-style: "Quicksand";
+  font-size: 1rem;
+  color: white;
+}/*# sourceMappingURL=estilo.css.map */

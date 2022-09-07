@@ -1,0 +1,26 @@
+.cajanav {
+    grid-area: navegador;
+    border-bottom: 3px white solid;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    background-image: url(../Imágenes/FondoNaranja2.jpg);
+    z-index: 5;
+        li{ display: inline;}
+        li a {
+            color: cornsilk;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0 1rem;
+            transition: all 1s;
+            display: inline;
+            font-family: 'Raleway';
+
+            &:hover {
+                font-style: bold;
+                font-size: 18px;
+
+            }
+        }
+    }

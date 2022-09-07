@@ -1,0 +1,167 @@
+@import "variables";
+@import "navegador";
+
+
+.index{
+    grid-template-areas: 
+    "navegador navegador navegador navegador"
+    "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal"
+    "separadorWaves separadorWaves separadorWaves separadorWaves"
+    "programas programas programas programas"
+    "calendario calendario calendario calendario"
+    "amigos amigos testimonios testimonios"
+    "contacto contacto contacto contacto"
+    ;
+}
+
+.cajaPrincipal {
+    grid-area: cajaPrincipal;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 34.5rem;
+    border-bottom: 3px solid white;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -5;
+        height: 150%;
+        filter: brightness(80%);
+    }
+
+    .cajaTitulo {
+        display: inline-block;
+        width: 60%;
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .logoTitulo {
+        height: 14rem;
+    }
+}
+
+.separadorWaves {
+    grid-area: separadorwaves;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 192px;
+
+    .waves {
+        transform: scale(1.6326, 0.5);
+        z-index: -2;
+    }
+}
+
+.programas {
+    grid-area: programas;
+    text-align: center;
+    height: 30rem;
+
+    .cuadrosProgram {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 24rem;
+        padding-top: 1rem;
+    }
+
+    .program {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        border: solid white 3px;
+        border-radius: 10px;
+        height: 21rem;
+        padding: 0.3rem;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        h4 {
+            font-family: $fuente-principal;
+            color: $color-letra;
+            font-size: 1.3rem;
+        }
+    }
+
+    img {
+        height: 15rem;
+    }
+}
+
+.calendario {
+    grid-area: calendario;
+    height: 34.5rem;
+    text-align: center;
+}
+
+.amigos {
+    grid-area: amigos;
+    height: 600px;
+    width: 612px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to left bottom, white, rgb(188, 187, 187));
+    border-top-right-radius: 290px;
+    border-bottom-right-radius: 290px;
+    padding-right: 19px;
+    justify-content: space-evenly;
+
+    h3 {
+        color: rgb(224, 147, 3);
+    }
+
+    .partners {
+        position: relative;
+        height: 50%;
+        filter: blur(10px);
+    }
+}
+
+.testimonios {
+    grid-area: testimonios;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom, white, rgb(188, 187, 187));
+    border-top-left-radius: 290px;
+    border-bottom-left-radius: 290px;
+    width: 612px;
+    padding-right: 19.5px;
+    justify-content: space-evenly;
+
+    h3 {
+        color: rgb(224, 147, 3);
+        
+    }
+
+    .partners {
+        position: relative;
+        height: 50%;
+        filter: blur(10px);
+    }
+}
+.contacto{
+    grid-area: contacto;
+    .qr{
+        transform: scale(0.3,0.3);}
+}
