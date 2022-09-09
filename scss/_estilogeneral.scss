@@ -3,6 +3,35 @@
 @import "footer";
 @import "contacto";
 
+body {
+    background-image: url("../Imágenes/FondoNaranja2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+        font-style: $fuente-principal;
+        font-size: 4rem;
+        color: $color-letra;
+    }
+
+    h2 {
+        font-style: $fuente-principal;
+        font-size: 2.5rem;
+        color: $color-letra;
+    }
+
+    h3 {
+        font-family: $fuente-secundaria;
+        font-size: 1.5rem;
+        color: $color-letra;
+    }
+
+    p {
+        font-style: $fuente-principal;
+        font-size: 1rem;
+        color: $color-letra;
+    }}
 .index {
     display: grid;
     grid-template-areas:
@@ -265,6 +294,7 @@
         grid-area: plataformaA;
         padding-top: 60px;
         text-align: center;
+        h1{font-family: "Quicksand";}
     }
 
     .plataformaB {
@@ -288,7 +318,7 @@
         margin-bottom: 30px;
         border: 3px white groove;
         box-shadow: 10px 12px 25px;
-
+        
         .gridejercicio {
             border: 3px solid white;
             margin: 5px;
@@ -299,9 +329,13 @@
             &:hover {
                 transform: scale(1.1, 1.1);
             }
+            li{color: white;}
+
         }
     }
-
+    h1{
+        font-family: $fuente-principal;
+    }
     h2 {
         font-family: "Raleway";
         color: whitesmoke;
@@ -310,7 +344,7 @@
     h3 {
         font-size: 150%;
         font-family: "Raleway";
-        color: whitesmoke;
+        color: rgb(58, 58, 58);
     }
 }
 
@@ -320,7 +354,8 @@
     flex-flow: row wrap;
     background: linear-gradient(to bottom, rgb(31, 31, 31), rgb(121, 87, 3), rgba(255, 166, 0, 0.989));
     justify-content: center;
-
+    h2{font-family: $fuente-principal;}
+    h1{font-family: $fuente-principal;}
     .mision {
         padding-top: 40px;
         padding-bottom: 50px;
@@ -346,15 +381,18 @@
         "contacto contacto contacto contacto"
         "footer footer footer footer"
     ;
-
+    h2{
+        font-size: 5rem;
+    }
     .nivelUno {
         grid-area: nivelUno;
         padding-top: 40px;
-        height: 33rem;
+        height: 34rem;
         transform: translate(0px, 43px);
         display: flex;
         flex-flow: row wrap;
-        background-image: url(../Imágenes/nivel1.jpg);
+        background-image: url(../Imágenes/nivel1.jpg) ;
+        
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -401,7 +439,7 @@
     .nivelDos {
         grid-area: nivelDos;
         padding-top: 40px;
-        height: 33rem;
+        height: 34rem;
         transform: translate(0px, 43px);
         display: flex;
         flex-flow: row wrap;
@@ -409,7 +447,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
+        border-bottom: solid white 10px;
         .intensivo1 {
             display: flex;
             flex-flow: row wrap;
@@ -418,10 +456,9 @@
             width: 100%;
             padding: 15px;
 
-
             .temarioDos {
                 background-color: rgba(255, 255, 255, 0.71);
-                border: 3px solid white;
+                border: 2px solid white;
                 width: 20rem;
                 padding: 3px;
                 margin: 5px;
