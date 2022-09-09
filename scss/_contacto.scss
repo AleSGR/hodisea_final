@@ -1,0 +1,63 @@
+.contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    .conectate {
+        text-align: center;
+        display: flex;
+        flex-flow:column wrap;
+        align-items: center;
+        justify-content: center;
+        h3{
+            display: inline-block;
+        }
+
+        .qr {
+            max-height: 170px;
+            transition: all 0.5s;
+
+            &:hover {
+                max-height: 200px;; 
+            }
+        }
+    }
+
+    .redes {
+        position: relative;
+        height: 300px;
+        width: 100px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            font-family: "Raleway";
+            color: white;
+        }
+
+        .fb {
+            height: 100px;
+            transition: all 0.5s;
+        }
+
+        .fb:hover {
+            transform: rotate(45deg);
+        }
+
+        .ig {
+            height: 100px;
+            transition: all 0.5s;
+        }
+
+        .ig:hover {
+            transform: rotate(45deg);
+        }
+    }
+}

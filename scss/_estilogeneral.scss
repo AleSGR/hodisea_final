@@ -1,16 +1,19 @@
 @import "variables";
 @import "navegador";
+@import "footer";
+@import "contacto";
 
-
-.index{
-    grid-template-areas: 
-    "navegador navegador navegador navegador"
-    "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal"
-    "separadorWaves separadorWaves separadorWaves separadorWaves"
-    "programas programas programas programas"
-    "calendario calendario calendario calendario"
-    "amigos amigos testimonios testimonios"
-    "contacto contacto contacto contacto"
+.index {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal"
+        "separadorwaves separadorwaves separadorwaves separadorwaves"
+        "programas programas programas programas"
+        "calendario calendario calendario calendario"
+        "amigos amigos testimonios testimonios"
+        "contacto contacto contacto contacto"
+        "footer footer footer footer"
     ;
 }
 
@@ -19,7 +22,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 34.5rem;
+    height: 38rem;
     border-bottom: 3px solid white;
     display: flex;
     flex-flow: row-reverse wrap;
@@ -31,7 +34,7 @@
         left: 0;
         top: 0;
         z-index: -5;
-        height: 150%;
+        height: 130%;
         filter: brightness(80%);
     }
 
@@ -39,8 +42,13 @@
         display: inline-block;
         width: 60%;
 
+        h1 {
+            font-family: $fuente-principal;
+        }
+
         h2 {
             font-size: 2rem;
+            font-family: $fuente-principal;
         }
     }
 
@@ -49,16 +57,17 @@
     }
 }
 
-.separadorWaves {
+.separadorwaves {
     grid-area: separadorwaves;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: 192px;
 
     .waves {
-        transform: scale(1.6326, 0.5);
+        transform: scale(1.3326, 0.5);
         z-index: -2;
     }
 }
@@ -67,6 +76,7 @@
     grid-area: programas;
     text-align: center;
     height: 30rem;
+    width: 100%;
 
     .cuadrosProgram {
         display: flex;
@@ -112,7 +122,7 @@
 .amigos {
     grid-area: amigos;
     height: 600px;
-    width: 612px;
+    width: 632px;
     display: flex;
     flex-flow: row-reverse wrap;
     text-align: center;
@@ -137,6 +147,7 @@
 .testimonios {
     grid-area: testimonios;
     height: 600px;
+    width: 632px;
     display: flex;
     flex-flow: row wrap;
     text-align: center;
@@ -145,13 +156,12 @@
     background: linear-gradient(to right bottom, white, rgb(188, 187, 187));
     border-top-left-radius: 290px;
     border-bottom-left-radius: 290px;
-    width: 612px;
     padding-right: 19.5px;
     justify-content: space-evenly;
 
     h3 {
         color: rgb(224, 147, 3);
-        
+
     }
 
     .partners {
@@ -160,8 +170,75 @@
         filter: blur(10px);
     }
 }
-.contacto{
-    grid-area: contacto;
-    .qr{
-        transform: scale(0.3,0.3);}
+
+.calendarioGrids {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "calendarioA calendarioA calendarioA calendarioA"
+        "calendarioB calendarioB calendarioC calendarioC"
+        "calendarioD calendarioD calendarioC calendarioC"
+        "contacto contacto contacto contacto"
+        "footer footer footer footer"
+
+    ;
+    gap: 10px;
+
+
+    .calendarioA {
+        grid-area: calendarioA;
+        display: flex;
+        flex-flow: column wrap;
+        padding-top: 60px;
+        padding-left: 30px;
+
+        h2 {
+            margin-top: -10px;
+        }
+    }
+
+    .calendarioB {
+        grid-area: calendarioB;
+        display: flex;
+        flex-flow: row wrap;
+        border: solid white 3px;
+        padding: 15px;
+        margin-left: 20px;
+        transition: all 0.5s;
+        border-radius: 5px;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+    .calendarioC {
+        grid-area: calendarioC;
+        border-radius: 3px solid white;
+        border-radius: 5px;
+    }
+
+    .calendarioD {
+        grid-area: calendarioD;
+        display: flex;
+        flex-flow: row wrap;
+        border: solid white 3px;
+        padding: 15px;
+        margin-left: 20px;
+        transition: all 0.5s;
+        border-radius: 5px;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .contacto {
+            grid-area: contacto;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
