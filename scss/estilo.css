@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-.descripcion {
-  color: rgb(235, 235, 235);
-  font-size: 1rem;
-  font-style: italic;
-}
-
 .cajanav {
   padding-top: 10px;
   grid-area: navegador;
@@ -108,7 +102,7 @@
 
 .index {
   display: grid;
-  grid-template-areas: "header header header header" "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal" "separadorwaves separadorwaves separadorwaves separadorwaves" "programas programas programas programas" "calendario calendario calendario calendario" "amigos amigos testimonios testimonios" "contacto contacto contacto contacto" "footer footer footer footer";
+  grid-template-areas: "navegador navegador navegador navegador" "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal" "separadorwaves separadorwaves separadorwaves separadorwaves" "programas programas programas programas" "calendario calendario calendario calendario" "amigos amigos testimonios testimonios" "contacto contacto contacto contacto" "footer footer footer footer";
 }
 
 .cajaPrincipal {
@@ -251,7 +245,7 @@
 
 .calendarioGrids {
   display: grid;
-  grid-template-areas: "header header header header" "calendarioA calendarioA calendarioA calendarioA" "calendarioB calendarioB calendarioC calendarioC" "calendarioD calendarioD calendarioC calendarioC" "contacto contacto contacto contacto" "footer footer footer footer";
+  grid-template-areas: "navegador navegador navegador navegador" "calendarioA calendarioA calendarioA calendarioA" "calendarioB calendarioB calendarioC calendarioC" "calendarioD calendarioD calendarioC calendarioC" "contacto contacto contacto contacto" "footer footer footer footer";
   gap: 10px;
 }
 .calendarioGrids .calendarioA {
@@ -261,7 +255,11 @@
   padding-top: 60px;
   padding-left: 30px;
 }
+.calendarioGrids .calendarioA h1 {
+  font-family: "Quicksand";
+}
 .calendarioGrids .calendarioA h2 {
+  font-family: "Quicksand";
   margin-top: -10px;
 }
 .calendarioGrids .calendarioB {
@@ -302,6 +300,160 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+}
+
+.plataformaGrids {
+  display: grid;
+  grid-template-areas: "navegador navegador navegador navegador" "plataformaA plataformaA plataformaA plataformaA" "plataformaB plataformaC plataformaC plataformaC" "footer footer footer footer";
+}
+.plataformaGrids .estatua {
+  width: 400px;
+}
+.plataformaGrids .plataformaA {
+  grid-area: plataformaA;
+  padding-top: 60px;
+  text-align: center;
+}
+.plataformaGrids .plataformaB {
+  grid-area: plataformaB;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.plataformaGrids .plataformaC {
+  background-color: goldenrod;
+  grid-area: plataformaC;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 3px white groove;
+  box-shadow: 10px 12px 25px;
+}
+.plataformaGrids .plataformaC .gridejercicio {
+  border: 3px solid white;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 0.5s;
+}
+.plataformaGrids .plataformaC .gridejercicio:hover {
+  transform: scale(1.1, 1.1);
+}
+.plataformaGrids h2 {
+  font-family: "Raleway";
+  color: whitesmoke;
+}
+.plataformaGrids h3 {
+  font-size: 150%;
+  font-family: "Raleway";
+  color: whitesmoke;
+}
+
+.quienessomos {
+  display: flex;
+  padding-top: 70px;
+  flex-flow: row wrap;
+  background: linear-gradient(to bottom, rgb(31, 31, 31), rgb(121, 87, 3), rgba(255, 166, 0, 0.989));
+  justify-content: center;
+}
+.quienessomos .mision {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  border-bottom: 3px solid white;
+}
+.quienessomos .videonosotros {
+  border: 3px white solid;
+  border-radius: 5px;
+}
+
+.paginaprogramas {
+  grid-area: paginaprogramas;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "navegador navegador navegador navegador" "nivelUno nivelUno nivelUno nivelUno" "nivelDos nivelDos nivelDos nivelDos" "contacto contacto contacto contacto" "footer footer footer footer";
+}
+.paginaprogramas .nivelUno {
+  grid-area: nivelUno;
+  padding-top: 40px;
+  height: 33rem;
+  transform: translate(0px, 43px);
+  display: flex;
+  flex-flow: row wrap;
+  background-image: url(../Imágenes/nivel1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: double white 10px;
+}
+.paginaprogramas .nivelUno .intensivo1 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 15px;
+}
+.paginaprogramas .nivelUno .intensivo1 .temarioUno {
+  background-color: rgba(255, 255, 255, 0.71);
+  border: 3px solid white;
+  width: 20rem;
+  padding: 3px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.paginaprogramas .nivelUno .intensivo1 h3 {
+  color: rgb(59, 59, 59);
+}
+.paginaprogramas .nivelUno .intensivo1 li {
+  color: rgb(59, 59, 59);
+  font-size: 12px;
+}
+.paginaprogramas .tituloInt1 {
+  width: 100%;
+  font-family: "Quicksand";
+  height: 20%;
+}
+.paginaprogramas .nivelDos {
+  grid-area: nivelDos;
+  padding-top: 40px;
+  height: 33rem;
+  transform: translate(0px, 43px);
+  display: flex;
+  flex-flow: row wrap;
+  background-image: url(../Imágenes/nivel2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.paginaprogramas .nivelDos .intensivo1 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 15px;
+}
+.paginaprogramas .nivelDos .intensivo1 .temarioDos {
+  background-color: rgba(255, 255, 255, 0.71);
+  border: 3px solid white;
+  width: 20rem;
+  padding: 3px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.paginaprogramas .nivelDos .intensivo1 .temarioDos h3 {
+  color: rgb(59, 59, 59);
+}
+.paginaprogramas .nivelDos .intensivo1 .temarioDos li {
+  color: rgb(59, 59, 59);
+  font-size: 12px;
 }
 
 .cajanav {
