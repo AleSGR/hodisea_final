@@ -2,6 +2,7 @@
 @import "navegador";
 @import "footer";
 @import "contacto";
+@import "mixin";
 
 body {
     background-image: url("../Imágenes/FondoNaranja2.jpg");
@@ -16,9 +17,8 @@ body {
     }
 
     h2 {
-        font-style: $fuente-principal;
+        @extend h2;
         font-size: 2.5rem;
-        color: $color-letra;
     }
 
     h3 {
@@ -28,9 +28,8 @@ body {
     }
 
     p {
-        font-style: $fuente-principal;
+@extend h3;
         font-size: 1rem;
-        color: $color-letra;
     }}
 .index {
     display: grid;
@@ -120,10 +119,8 @@ body {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        border: solid white 3px;
-        border-radius: 10px;
+        @include cuadro;
         height: 21rem;
-        padding: 0.3rem;
         transition: all 0.5s;
 
         &:hover {
@@ -235,11 +232,8 @@ body {
         grid-area: calendarioB;
         display: flex;
         flex-flow: row wrap;
-        border: solid white 3px;
-        padding: 15px;
-        margin-left: 20px;
+        @include cuadro;
         transition: all 0.5s;
-        border-radius: 5px;
 
         &:hover {
             transform: scale(1.1, 1.1);
@@ -248,17 +242,14 @@ body {
 
     .calendarioC {
         grid-area: calendarioC;
-        border-radius: 3px solid white;
-        border-radius: 5px;
+        @include cuadro;
     }
 
     .calendarioD {
         grid-area: calendarioD;
         display: flex;
         flex-flow: row wrap;
-        border: solid white 3px;
-        padding: 15px;
-        margin-left: 20px;
+        @include cuadro;
         transition: all 0.5s;
         border-radius: 5px;
 
