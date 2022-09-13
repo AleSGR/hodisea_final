@@ -1,7 +1,0 @@
-$descrip: (color: rgb(235, 235, 235), fuentetam: 1rem, fuenteestilo: italic );
-
-.descripcion{
-    color: map-get($descrip, color );
-    font-size: map-get($descrip , fuentetam);
-    font-style: map-get($descrip, fuenteestilo);
-}

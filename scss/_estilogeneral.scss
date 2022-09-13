@@ -17,7 +17,7 @@ body {
     }
 
     h2 {
-        @extend h2;
+        @extend h1;
         font-size: 2.5rem;
     }
 
@@ -119,9 +119,10 @@ body {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        @include cuadro;
         height: 21rem;
         transition: all 0.5s;
+        
+        @include cuadro;
 
         &:hover {
             transform: scale(1.1, 1.1);
