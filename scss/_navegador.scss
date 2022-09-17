@@ -1,26 +1,5 @@
-.cajanav {
-    padding-top: 10px;
-    grid-area: navegador;
-    border-bottom: 3px white solid;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    background-image: url(../Imágenes/FondoNaranja2.jpg);
-    z-index: 5;
-        li{ display: inline;}
-        li a {
-            color: cornsilk;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 0 1rem;
-            transition: all 1s;
-            display: inline;
-            font-family: 'Raleway';
-
-            &:hover {
-                font-style: bold;
-                font-size: 18px;
-
-            }
-        }
-    }
+.navbar{
+    background:linear-gradient(to right,rgb(255, 255, 255),rgb(184, 184, 184));
+    box-shadow: 1px 1px 1rem;
+}
+.logonav{max-width: 6rem;}

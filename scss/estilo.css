@@ -1,31 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-.cajanav {
-  padding-top: 10px;
-  grid-area: navegador;
-  border-bottom: 3px white solid;
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  background-image: url(../Imágenes/FondoNaranja2.jpg);
-  z-index: 5;
+.navbar {
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 184, 184));
+  box-shadow: 1px 1px 1rem;
 }
-.cajanav li {
-  display: inline;
-}
-.cajanav li a {
-  color: cornsilk;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0 1rem;
-  transition: all 1s;
-  display: inline;
-  font-family: "Raleway";
-}
-.cajanav li a:hover {
-  font-style: bold;
-  font-size: 18px;
+
+.logonav {
+  max-width: 6rem;
 }
 
 .footer {
@@ -124,8 +106,17 @@ body p {
 }
 
 .index {
-  display: grid;
-  grid-template-areas: "navegador navegador navegador navegador" "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal" "separadorwaves separadorwaves separadorwaves separadorwaves" "programas programas programas programas" "calendario calendario calendario calendario" "amigos amigos testimonios testimonios" "contacto contacto contacto contacto" "footer footer footer footer";
+  /* display: grid;
+   grid-template-areas:
+       "navegador navegador navegador navegador"
+       "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal"
+       "separadorwaves separadorwaves separadorwaves separadorwaves"
+       "programas programas programas programas"
+       "calendario calendario calendario calendario"
+       "amigos amigos testimonios testimonios"
+       "contacto contacto contacto contacto"
+       "footer footer footer footer"
+   ;*/
 }
 
 .cajaPrincipal {
@@ -502,31 +493,13 @@ body p {
   font-size: 12px;
 }
 
-.cajanav {
-  padding-top: 10px;
-  grid-area: navegador;
-  border-bottom: 3px white solid;
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  background-image: url(../Imágenes/FondoNaranja2.jpg);
-  z-index: 5;
+.navbar {
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 184, 184));
+  box-shadow: 1px 1px 1rem;
 }
-.cajanav li {
-  display: inline;
-}
-.cajanav li a {
-  color: cornsilk;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0 1rem;
-  transition: all 1s;
-  display: inline;
-  font-family: "Raleway";
-}
-.cajanav li a:hover {
-  font-style: bold;
-  font-size: 18px;
+
+.logonav {
+  max-width: 6rem;
 }
 
 .contacto {
