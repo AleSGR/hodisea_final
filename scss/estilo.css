@@ -258,60 +258,55 @@ body p {
   filter: blur(10px);
 }
 
-.calendarioGrids {
-  display: grid;
-  grid-template-areas: "navegador navegador navegador navegador" "calendarioA calendarioA calendarioA calendarioA" "calendarioB calendarioB calendarioC calendarioC" "calendarioD calendarioD calendarioC calendarioC" "contacto contacto contacto contacto" "footer footer footer footer";
-  gap: 10px;
+.calendariopag {
+  /*  display: grid;
+      grid-template-areas:
+          "navegador navegador navegador navegador"
+          "calendarioA calendarioA calendarioA calendarioA"
+          "calendarioB calendarioB calendarioC calendarioC"
+          "calendarioD calendarioD calendarioC calendarioC"
+          "contacto contacto contacto contacto"
+          "footer footer footer footer"
+
+      ;
+      gap: 10px;
+  */
 }
-.calendarioGrids .calendarioA {
+.calendariopag .calendarioA {
   grid-area: calendarioA;
   display: flex;
   flex-flow: column wrap;
-  padding-top: 60px;
   padding-left: 30px;
 }
-.calendarioGrids .calendarioA h1, .calendarioGrids .calendarioA body h2, body .calendarioGrids .calendarioA h2 {
+.calendariopag .calendarioA h1, .calendariopag .calendarioA body h2, body .calendariopag .calendarioA h2 {
   font-family: "Quicksand";
 }
-.calendarioGrids .calendarioA h2 {
+.calendariopag .calendarioA h2 {
   font-family: "Quicksand";
   margin-top: -10px;
 }
-.calendarioGrids .calendarioB {
+.calendariopag .calendarioB {
   grid-area: calendarioB;
   display: flex;
   flex-flow: row wrap;
+}
+.calendariopag .calendarioB .promociones {
   border: 3px solid white;
   margin: 5px;
   border-radius: 10px;
   padding: 5px;
   transition: all 0.5s;
 }
-.calendarioGrids .calendarioB:hover {
+.calendariopag .calendarioB .promociones:hover {
   transform: scale(1.1, 1.1);
 }
-.calendarioGrids .calendarioC {
-  grid-area: calendarioC;
+.calendariopag .calendarioC {
   border: 3px solid white;
   margin: 5px;
   border-radius: 10px;
   padding: 5px;
 }
-.calendarioGrids .calendarioD {
-  grid-area: calendarioD;
-  display: flex;
-  flex-flow: row wrap;
-  border: 3px solid white;
-  margin: 5px;
-  border-radius: 10px;
-  padding: 5px;
-  transition: all 0.5s;
-  border-radius: 5px;
-}
-.calendarioGrids .calendarioD:hover {
-  transform: scale(1.1, 1.1);
-}
-.calendarioGrids .calendarioD .contacto {
+.calendariopag .contacto {
   grid-area: contacto;
   width: 100%;
   display: flex;
@@ -405,17 +400,26 @@ body p {
   border-radius: 5px;
 }
 
-.paginaprogramas {
+.programaspag {
+  /*
   grid-area: paginaprogramas;
+
+  display: grid;
+  grid-template-areas:
+      "navegador navegador navegador navegador"
+      "nivelUno nivelUno nivelUno nivelUno"
+      "nivelDos nivelDos nivelDos nivelDos"
+      "contacto contacto contacto contacto"
+      "footer footer footer footer"
+  ;
+  */
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-areas: "navegador navegador navegador navegador" "nivelUno nivelUno nivelUno nivelUno" "nivelDos nivelDos nivelDos nivelDos" "contacto contacto contacto contacto" "footer footer footer footer";
 }
-.paginaprogramas h2 {
+.programaspag h2 {
   font-size: 5rem;
 }
-.paginaprogramas .nivelUno {
+.programaspag .nivelUno {
   grid-area: nivelUno;
   padding-top: 40px;
   height: 34rem;
@@ -428,7 +432,7 @@ body p {
   background-size: cover;
   border-bottom: double white 10px;
 }
-.paginaprogramas .nivelUno .intensivo1 {
+.programaspag .nivelUno .intensivo1 {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
@@ -436,7 +440,7 @@ body p {
   width: 100%;
   padding: 15px;
 }
-.paginaprogramas .nivelUno .intensivo1 .temarioUno {
+.programaspag .nivelUno .intensivo1 .temarioUno {
   background-color: rgba(255, 255, 255, 0.71);
   border: 3px solid white;
   width: 20rem;
@@ -444,19 +448,19 @@ body p {
   margin: 5px;
   border-radius: 5px;
 }
-.paginaprogramas .nivelUno .intensivo1 h3, .paginaprogramas .nivelUno .intensivo1 body p, body .paginaprogramas .nivelUno .intensivo1 p {
+.programaspag .nivelUno .intensivo1 h3, .programaspag .nivelUno .intensivo1 body p, body .programaspag .nivelUno .intensivo1 p {
   color: rgb(59, 59, 59);
 }
-.paginaprogramas .nivelUno .intensivo1 li {
+.programaspag .nivelUno .intensivo1 li {
   color: rgb(59, 59, 59);
   font-size: 12px;
 }
-.paginaprogramas .tituloInt1 {
+.programaspag .tituloInt1 {
   width: 100%;
   font-family: "Quicksand";
   height: 20%;
 }
-.paginaprogramas .nivelDos {
+.programaspag .nivelDos {
   grid-area: nivelDos;
   padding-top: 40px;
   height: 34rem;
@@ -469,7 +473,7 @@ body p {
   background-size: cover;
   border-bottom: solid white 10px;
 }
-.paginaprogramas .nivelDos .intensivo1 {
+.programaspag .nivelDos .intensivo1 {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
@@ -477,7 +481,7 @@ body p {
   width: 100%;
   padding: 15px;
 }
-.paginaprogramas .nivelDos .intensivo1 .temarioDos {
+.programaspag .nivelDos .intensivo1 .temarioDos {
   background-color: rgba(255, 255, 255, 0.71);
   border: 2px solid white;
   width: 20rem;
@@ -485,10 +489,10 @@ body p {
   margin: 5px;
   border-radius: 5px;
 }
-.paginaprogramas .nivelDos .intensivo1 .temarioDos h3, .paginaprogramas .nivelDos .intensivo1 .temarioDos body p, body .paginaprogramas .nivelDos .intensivo1 .temarioDos p {
+.programaspag .nivelDos .intensivo1 .temarioDos h3, .programaspag .nivelDos .intensivo1 .temarioDos body p, body .programaspag .nivelDos .intensivo1 .temarioDos p {
   color: rgb(59, 59, 59);
 }
-.paginaprogramas .nivelDos .intensivo1 .temarioDos li {
+.programaspag .nivelDos .intensivo1 .temarioDos li {
   color: rgb(59, 59, 59);
   font-size: 12px;
 }

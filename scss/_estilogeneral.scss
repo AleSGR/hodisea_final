@@ -44,7 +44,6 @@ body {
         "footer footer footer footer"
     ;*/
 }
-
 .cajaPrincipal {
     grid-area: cajaPrincipal;
     position: relative;
@@ -198,8 +197,8 @@ body {
     }
 }
 
-.calendarioGrids {
-    display: grid;
+.calendariopag {
+  /*  display: grid;
     grid-template-areas:
         "navegador navegador navegador navegador"
         "calendarioA calendarioA calendarioA calendarioA"
@@ -210,13 +209,12 @@ body {
 
     ;
     gap: 10px;
-
+*/
 
     .calendarioA {
         grid-area: calendarioA;
         display: flex;
         flex-flow: column wrap;
-        padding-top: 60px;
         padding-left: 30px;
 
         h1 {
@@ -229,35 +227,22 @@ body {
         }
     }
 
-    .calendarioB {
+    .calendarioB{
         grid-area: calendarioB;
         display: flex;
         flex-flow: row wrap;
+        .promociones{
         @include cuadro;
         transition: all 0.5s;
-
+    
         &:hover {
             transform: scale(1.1, 1.1);
-        }
-    }
+        }}
 
-    .calendarioC {
-        grid-area: calendarioC;
+    }
+    .calendarioC{
         @include cuadro;
     }
-
-    .calendarioD {
-        grid-area: calendarioD;
-        display: flex;
-        flex-flow: row wrap;
-        @include cuadro;
-        transition: all 0.5s;
-        border-radius: 5px;
-
-        &:hover {
-            transform: scale(1.1, 1.1);
-        }
-
         .contacto {
             grid-area: contacto;
             width: 100%;
@@ -267,7 +252,7 @@ body {
             justify-content: center;
         }
     }
-}
+
 
 
 .plataformaGrids {
@@ -361,10 +346,10 @@ body {
 }
 
 
-.paginaprogramas {
+.programaspag {
+    /*
     grid-area: paginaprogramas;
-    margin: 0;
-    padding: 0;
+
     display: grid;
     grid-template-areas:
         "navegador navegador navegador navegador"
@@ -373,6 +358,9 @@ body {
         "contacto contacto contacto contacto"
         "footer footer footer footer"
     ;
+    */
+    margin: 0;
+    padding: 0;
     h2{
         font-size: 5rem;
     }
