@@ -1,11 +1,58 @@
-.navbar{
-    background:linear-gradient(to right,rgb(255, 255, 255),rgb(184, 184, 184));
+.navbar {
+    background-image: url("../Imágenes/fondocelnav.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 1px 1px 1rem;
+    font-family: $fuente-secundaria;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 3px solid white;
 
+    .navbar-brand {
+        padding: 4px;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+    
+
+    .navbar-nav {
+        width: max-content;
+        display: flex;
+        flex-flow: column wrap;
+        text-align:start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        
+        .nav-item {
+            display: inline-block;
+            padding-right: 1rem;
+
+            .nav-link {
+                &:hover {
+                    transform: scale(1.1, 1.1) rotate(5deg);
+                }
+            }
+        }
+    }
 }
-.logonav{max-width: 6rem;}
-#navbarNav{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.logonav {
+    max-width: 6rem;
 }
+@media(min-width:992px) {
+    .contenedorlistanav {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .navbar{
+        font-size: 1rem;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 184, 184));
+    .navbar-nav {
+        flex-flow: row wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center; } }}

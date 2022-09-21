@@ -2,14 +2,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 .navbar {
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 184, 184));
+  background-image: url("../Imágenes/fondocelnav.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 1px 1px 1rem;
+  font-family: "Raleway";
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 3px solid white;
+}
+.navbar .navbar-brand {
+  padding: 4px;
+}
+.navbar .navbar-brand:hover {
+  transform: scale(1.1, 1.1);
+}
+.navbar .navbar-nav {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 3rem;
+}
+.navbar .navbar-nav .nav-item {
+  display: inline-block;
+  padding-right: 1rem;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.1, 1.1) rotate(5deg);
 }
 
 .logonav {
   max-width: 6rem;
 }
 
+@media (min-width: 992px) {
+  .contenedorlistanav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar {
+    font-size: 1rem;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 184, 184));
+  }
+  .navbar .navbar-nav {
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .footer {
   grid-area: footer;
   display: flex;
@@ -145,6 +192,7 @@ body p {
 }
 .cajaPrincipal .cajaTitulo h1, .cajaPrincipal .cajaTitulo body h2, body .cajaPrincipal .cajaTitulo h2 {
   font-family: "Quicksand";
+  font-weight: bold;
 }
 .cajaPrincipal .cajaTitulo h2 {
   font-size: 2rem;
@@ -363,6 +411,7 @@ body p {
 }
 .plataformaGrids .plataformaC .gridejercicio li {
   color: white;
+  list-style-image: url(../Imágenes/monedaviñeta.png);
 }
 .plataformaGrids h1, .plataformaGrids body h2, body .plataformaGrids h2 {
   font-family: "Quicksand";
@@ -454,6 +503,7 @@ body p {
 .programaspag .nivelUno .intensivo1 li {
   color: rgb(59, 59, 59);
   font-size: 12px;
+  list-style: lower-greek;
 }
 .programaspag .tituloInt1 {
   width: 100%;
@@ -495,17 +545,65 @@ body p {
 .programaspag .nivelDos .intensivo1 .temarioDos li {
   color: rgb(59, 59, 59);
   font-size: 12px;
+  list-style: lower-greek;
 }
 
 .navbar {
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 184, 184));
+  background-image: url("../Imágenes/fondocelnav.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 1px 1px 1rem;
+  font-family: "Raleway";
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 3px solid white;
+}
+.navbar .navbar-brand {
+  padding: 4px;
+}
+.navbar .navbar-brand:hover {
+  transform: scale(1.1, 1.1);
+}
+.navbar .navbar-nav {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 3rem;
+}
+.navbar .navbar-nav .nav-item {
+  display: inline-block;
+  padding-right: 1rem;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.1, 1.1) rotate(5deg);
 }
 
 .logonav {
   max-width: 6rem;
 }
 
+@media (min-width: 992px) {
+  .contenedorlistanav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar {
+    font-size: 1rem;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 184, 184));
+  }
+  .navbar .navbar-nav {
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .contacto {
   grid-area: contacto;
   display: flex;

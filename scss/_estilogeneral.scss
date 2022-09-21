@@ -71,6 +71,7 @@ body {
 
         h1 {
             font-family: $fuente-principal;
+            font-weight: bold;
         }
 
         h2 {
@@ -306,7 +307,8 @@ body {
             &:hover {
                 transform: scale(1.1, 1.1);
             }
-            li{color: white;}
+            li{color: white;
+            list-style-image: url(../Imágenes/monedaviñeta.png);}
 
         }
     }
@@ -404,6 +406,7 @@ body {
             li {
                 color: rgb(59, 59, 59);
                 font-size: 12px;
+                list-style:lower-greek;
             }
         }
     }
@@ -452,6 +455,7 @@ body {
                 li {
                     color: rgb(59, 59, 59);
                     font-size: 12px;
+                    list-style:lower-greek;
                 }
             }
         }
