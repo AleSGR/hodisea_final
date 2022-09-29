@@ -130,7 +130,7 @@
 }
 
 body {
-  background-image: url("../Imágenes/FondoNaranja2.jpg");
+  background-image: url("../Imagenes/FondoNaranja2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -478,7 +478,7 @@ body p {
   margin: 5px;
   border-radius: 10px;
   padding: 5px;
-  background-image: url(../Imágenes/pizarra.jpg);
+  background-image: url(../Imagenes/pizarra.jpg);
   background-repeat: none;
   background-size: cover;
   padding: 2rem;
@@ -521,7 +521,7 @@ body p {
   font-family: "Raleway";
   color: white;
   height: 34rem;
-  background-image: url(../Imágenes/pizarra.jpg);
+  background-image: url(../Imagenes/pizarra.jpg);
   background-repeat: none;
   background-size: cover;
 }
@@ -534,7 +534,7 @@ body p {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  background-image: url(../Imágenes/nivel1.jpg);
+  background-image: url(../Imagenes/nivel1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -580,7 +580,7 @@ body p {
   height: 30rem;
   display: flex;
   flex-flow: row wrap;
-  background-image: url(../Imágenes/nivel2.jpg);
+  background-image: url(../Imagenes/nivel2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

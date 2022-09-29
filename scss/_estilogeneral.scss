@@ -5,7 +5,7 @@
 @import "mixin";
 
 body {
-    background-image: url("../Imágenes/FondoNaranja2.jpg");
+    background-image: url("../Imagenes/FondoNaranja2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -379,7 +379,7 @@ body {
 
     .historia {
         @include cuadro;
-        background-image: url(../Imágenes/pizarra.jpg);
+        background-image: url(../Imagenes/pizarra.jpg);
         background-repeat: none;
         background-size: cover;
         padding: 2rem;
@@ -421,7 +421,7 @@ body {
         font-family: $fuente-secundaria;
         color: white;
         height: 34rem;
-        background-image: url(../Imágenes/pizarra.jpg);
+        background-image: url(../Imagenes/pizarra.jpg);
         background-repeat: none;
         background-size: cover;
         li{list-style: lower-greek;}
@@ -432,7 +432,7 @@ body {
         width: 100%;
         display: flex;
         flex-flow: row wrap;
-        background-image: url(../Imágenes/nivel1.jpg) ;
+        background-image: url(../Imagenes/nivel1.jpg) ;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -488,7 +488,7 @@ body {
         height: 30rem;
         display: flex;
         flex-flow: row wrap;
-        background-image: url(../Imágenes/nivel2.jpg);
+        background-image: url(../Imagenes/nivel2.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
