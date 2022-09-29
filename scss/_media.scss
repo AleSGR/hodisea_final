@@ -24,6 +24,17 @@
             height: 65%;
         }
     }
+    .programaspag{
+        .nivelUno{
+            .intensivo1{
+                .temarioUno{
+                    max-width: 14rem;
+        }}}
+        .nivelDos{
+            .intensivo1{
+                .temarioDos{
+                    max-width: 14rem;
+    }}}}
 }
 
 
@@ -60,16 +71,50 @@
             height: 80%;
         }
     }
+    .programaspag{
+    .nivelUno {
+        height: 50rem;
+    }
+    .tituloInt1{
+        h2{font-size: 4rem;}
+    }
+    .nivelDos{
+        height: 50rem;
 
-
+    }}
 }
 
 @media (max-width: 576px) {
+    .cursos{
+        h1{font-size:1.5rem}
+    }
     .programas {
         .cuadrosProgram{
             justify-content: center;
         }
+        .program{
+            max-width: 13rem;
+        }
         img {
-            height: 10rem;
+            height: 8rem;
         }
     }}
+@media (max-width: 540px){
+    .programaspag{
+        .nivelUno {
+            height: 55rem;
+            .intensivo1{
+                .temarioUno{
+                    min-width: 20rem;
+        }}}
+        .tituloInt1{
+            h2{font-size: 4rem;}
+        }
+        .nivelDos{
+            height: 55rem;
+            .intensivo1{
+                .temarioDos{
+                    min-width: 20rem;
+    
+        }}}}
+}

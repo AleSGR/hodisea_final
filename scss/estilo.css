@@ -219,7 +219,8 @@ body p {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 21rem;
+  min-height: 24rem;
+  width: 17rem;
   transition: all 0.5s;
   border: 3px solid white;
   margin: 5px;
@@ -233,6 +234,14 @@ body p {
   font-family: "Quicksand";
   color: white;
   font-size: 1.3rem;
+}
+.programas .program p {
+  font-size: 0.7rem;
+}
+.programas .program a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
 }
 .programas img {
   height: 15rem;
@@ -537,7 +546,7 @@ body p {
 .programaspag .nivelUno .intensivo1 .temarioUno {
   background-color: rgba(255, 255, 255, 0.71);
   border: 3px solid white;
-  width: 20rem;
+  max-width: 18rem;
   padding: 3px;
   margin: 5px;
   border-radius: 5px;
@@ -548,11 +557,11 @@ body p {
 }
 .programaspag .nivelUno .intensivo1 h3, .programaspag .nivelUno .intensivo1 body p, body .programaspag .nivelUno .intensivo1 p {
   color: rgb(59, 59, 59);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .programaspag .nivelUno .intensivo1 li {
   color: rgb(59, 59, 59);
-  font-size: 14px;
+  font-size: 12px;
   list-style: lower-greek;
 }
 .programaspag .tituloInt1 {
@@ -582,7 +591,7 @@ body p {
 .programaspag .nivelDos .intensivo1 .temarioDos {
   background-color: rgba(255, 255, 255, 0.71);
   border: 2px solid white;
-  width: 20rem;
+  width: 18rem;
   padding: 3px;
   margin: 5px;
   border-radius: 5px;
@@ -593,11 +602,11 @@ body p {
 }
 .programaspag .nivelDos .intensivo1 .temarioDos h3, .programaspag .nivelDos .intensivo1 .temarioDos body p, body .programaspag .nivelDos .intensivo1 .temarioDos p {
   color: rgb(59, 59, 59);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .programaspag .nivelDos .intensivo1 .temarioDos li {
   color: rgb(59, 59, 59);
-  font-size: 14px;
+  font-size: 12px;
   list-style: lower-greek;
 }
 
@@ -751,6 +760,12 @@ body p {
     padding-top: 2rem;
     height: 65%;
   }
+  .programaspag .nivelUno .intensivo1 .temarioUno {
+    max-width: 14rem;
+  }
+  .programaspag .nivelDos .intensivo1 .temarioDos {
+    max-width: 14rem;
+  }
 }
 @media (max-width: 768px) {
   .cajaPrincipal {
@@ -778,13 +793,45 @@ body p {
     padding-top: 2rem;
     height: 80%;
   }
+  .programaspag .nivelUno {
+    height: 50rem;
+  }
+  .programaspag .tituloInt1 h2 {
+    font-size: 4rem;
+  }
+  .programaspag .nivelDos {
+    height: 50rem;
+  }
 }
 @media (max-width: 576px) {
+  .cursos h1, .cursos body h2, body .cursos h2 {
+    font-size: 1.5rem;
+  }
   .programas .cuadrosProgram {
     justify-content: center;
   }
+  .programas .program {
+    max-width: 13rem;
+  }
   .programas img {
-    height: 10rem;
+    height: 8rem;
+  }
+}
+@media (max-width: 540px) {
+  .programaspag .nivelUno {
+    height: 55rem;
+  }
+  .programaspag .nivelUno .intensivo1 .temarioUno {
+    min-width: 20rem;
+  }
+  .programaspag .tituloInt1 h2 {
+    font-size: 4rem;
+  }
+  .programaspag .nivelDos {
+    height: 55rem;
+  }
+  .programaspag .nivelDos .intensivo1 .temarioDos {
+    min-width: 20rem;
   }
 }
 * {

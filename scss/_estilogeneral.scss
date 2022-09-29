@@ -110,8 +110,10 @@ body {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        height: 21rem;
+        min-height: 24rem;
+        width: 17rem;
         transition: all 0.5s;
+
         
         @include cuadro;
 
@@ -124,6 +126,14 @@ body {
             color: $color-letra;
             font-size: 1.3rem;
         }
+        p{
+            font-size: 0.7rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            list-style: none;
+    }
     }
 
     img {
@@ -439,7 +449,7 @@ body {
             .temarioUno {
                 background-color: rgba(255, 255, 255, 0.71);
                 border: 3px solid white;
-                width: 20rem;
+                max-width: 18rem;
                 padding: 3px;
                 margin: 5px;
                 border-radius: 5px;
@@ -452,12 +462,12 @@ body {
 
             h3 {
                 color: rgb(59, 59, 59);
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
 
             li {
                 color: rgb(59, 59, 59);
-                font-size: 14px;
+                font-size: 12px;
                 list-style:lower-greek;
             }
         }
@@ -492,7 +502,7 @@ body {
             .temarioDos {
                 background-color: rgba(255, 255, 255, 0.71);
                 border: 2px solid white;
-                width: 20rem;
+                width: 18rem;
                 padding: 3px;
                 margin: 5px;
                 border-radius: 5px;
@@ -503,12 +513,12 @@ body {
 
                 h3 {
                     color: rgb(59, 59, 59);
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
 
                 li {
                     color: rgb(59, 59, 59);
-                    font-size: 14px;
+                    font-size: 12px;
                     list-style:lower-greek;
                 }
             }
