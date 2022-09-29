@@ -1,0 +1,75 @@
+@media (max-width: 1080px) {
+    .programas {
+        height: 50rem;
+    }
+
+    .amigos {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        padding-top: 4rem;
+
+        .partners {
+            height: 80%;
+        }
+    }
+
+    .testimonios {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        padding-top: 4rem;
+        padding-right: 5px;
+
+        .partners {
+            padding-top: 2rem;
+            height: 65%;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cajaPrincipal {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        height: 31rem;
+
+        .cajaTitulo {
+            .slogan {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        .logoTitulo {
+            height: 10rem;
+        }
+    }
+
+    .testimonios {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        padding-right: 5px;
+
+        .partners {
+            padding-top: 2rem;
+            height: 80%;
+        }
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .programas {
+        .cuadrosProgram{
+            justify-content: center;
+        }
+        img {
+            height: 10rem;
+        }
+    }}

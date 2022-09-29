@@ -7,6 +7,7 @@
 @import "contacto";
 @import "footer";
 @import "mixin";
+@import "media";
 
 * {
     margin: 0;
@@ -22,7 +23,8 @@ $botonreserva: (
     tipocaja: inline-block,
     fuente:"Raleway",
     pad:5px,
-
+    hgt:2.7rem,
+    wdt:6rem
 );
 
 .botonreserva {
@@ -34,4 +36,6 @@ $botonreserva: (
     border-radius: map-get($botonreserva , redondear );
     font-family: map-get($botonreserva , fuente );
     padding: map-get($botonreserva , pad );
+    height: map-get($botonreserva , hgt );
+    width: map-get($botonreserva , wdt );
 }

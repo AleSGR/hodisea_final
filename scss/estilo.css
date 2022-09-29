@@ -255,8 +255,22 @@ body p {
 
 .calendario {
   grid-area: calendario;
-  height: 34.5rem;
+  height: 38rem;
   text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.calendario .imagencalendario {
+  border-radius: 10px;
+  max-height: 30rem;
+}
+.calendario .botonreserva {
+  transition: all 0.5s;
+}
+.calendario .botonreserva:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .amigos {
@@ -278,8 +292,8 @@ body p {
 }
 .amigos .partners {
   position: relative;
-  height: 50%;
-  filter: blur(10px);
+  height: 80%;
+  border-radius: 25%;
 }
 
 .testimonios {
@@ -302,8 +316,8 @@ body p {
 }
 .testimonios .partners {
   position: relative;
-  height: 50%;
-  filter: blur(10px);
+  height: 70%;
+  border-radius: 25%;
 }
 
 .calendariopag {
@@ -324,7 +338,7 @@ body p {
   grid-area: calendarioA;
   display: flex;
   flex-flow: column wrap;
-  padding-left: 30px;
+  padding-left: 3rem;
 }
 .calendariopag .calendarioA h1, .calendariopag .calendarioA body h2, body .calendariopag .calendarioA h2 {
   font-family: "Quicksand";
@@ -333,10 +347,13 @@ body p {
   font-family: "Quicksand";
   margin-top: -10px;
 }
+.calendariopag .calBC {
+  padding-left: 7REM;
+}
 .calendariopag .calendarioB {
   grid-area: calendarioB;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 .calendariopag .calendarioB .promociones {
   border: 3px solid white;
@@ -348,11 +365,8 @@ body p {
 .calendariopag .calendarioB .promociones:hover {
   transform: scale(1.1, 1.1);
 }
-.calendariopag .calendarioC {
-  border: 3px solid white;
-  margin: 5px;
+.calendariopag .calendarioC .imagencalendario {
   border-radius: 10px;
-  padding: 5px;
 }
 .calendariopag .contacto {
   grid-area: contacto;
@@ -362,17 +376,32 @@ body p {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .calendariopag .calBC {
+    padding-left: 1rem;
+  }
+}
 
 .plataformaGrids {
-  display: grid;
-  grid-template-areas: "navegador navegador navegador navegador" "plataformaA plataformaA plataformaA plataformaA" "plataformaB plataformaC plataformaC plataformaC" "footer footer footer footer";
+  /*display: grid;
+      grid-template-areas:
+          "navegador navegador navegador navegador"
+          "plataformaA plataformaA plataformaA plataformaA"
+          "plataformaB plataformaC plataformaC plataformaC"
+          "footer footer footer footer";
+  */
 }
 .plataformaGrids .estatua {
-  width: 400px;
+  min-width: 15rem;
+}
+.plataformaGrids .ejercicios {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 .plataformaGrids .plataformaA {
   grid-area: plataformaA;
-  padding-top: 60px;
   text-align: center;
 }
 .plataformaGrids .plataformaA h1, .plataformaGrids .plataformaA body h2, body .plataformaGrids .plataformaA h2 {
@@ -411,7 +440,7 @@ body p {
 }
 .plataformaGrids .plataformaC .gridejercicio li {
   color: white;
-  list-style-image: url(../Imágenes/monedaviñeta.png);
+  list-style: upper-roman;
 }
 .plataformaGrids h1, .plataformaGrids body h2, body .plataformaGrids h2 {
   font-family: "Quicksand";
@@ -426,25 +455,39 @@ body p {
   color: rgb(58, 58, 58);
 }
 
-.quienessomos {
+.nosotros {
+  padding: 0;
+  margin: 0;
+}
+.nosotros h2 {
+  font-family: "Quicksand";
+}
+.nosotros h1, .nosotros body h2, body .nosotros h2 {
+  font-family: "Quicksand";
+}
+.nosotros .quienessomos {
   display: flex;
-  padding-top: 70px;
   flex-flow: row wrap;
-  background: linear-gradient(to bottom, rgb(31, 31, 31), rgb(121, 87, 3), rgba(255, 166, 0, 0.989));
+  width: 100%;
   justify-content: center;
+  align-items: center;
+  padding-left: 4Rem;
 }
-.quienessomos h2 {
-  font-family: "Quicksand";
+.nosotros .quienessomos .historia {
+  border: 3px solid white;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  background-image: url(../Imágenes/pizarra.jpg);
+  background-repeat: none;
+  background-size: cover;
+  padding: 2rem;
+  transition: all 1s;
 }
-.quienessomos h1, .quienessomos body h2, body .quienessomos h2 {
-  font-family: "Quicksand";
+.nosotros .quienessomos .historia:hover {
+  transform: translate(-5px, 5px);
 }
-.quienessomos .mision {
-  padding-top: 40px;
-  padding-bottom: 50px;
-  border-bottom: 3px solid white;
-}
-.quienessomos .videonosotros {
+.nosotros .quienessomos .videonosotros {
   border: 3px white solid;
   border-radius: 5px;
 }
@@ -462,17 +505,33 @@ body p {
       "footer footer footer footer"
   ;
   */
-  margin: 0;
-  padding: 0;
+}
+.programaspag h1, .programaspag body h2, body .programaspag h2 {
+  font-family: "Quicksand";
+  font-size: 3rem;
 }
 .programaspag h2 {
   font-size: 5rem;
 }
+.programaspag .cursos {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Raleway";
+  color: white;
+  height: 34rem;
+  background-image: url(../Imágenes/pizarra.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+.programaspag .cursos li {
+  list-style: lower-greek;
+}
 .programaspag .nivelUno {
   grid-area: nivelUno;
-  padding-top: 40px;
-  height: 34rem;
-  transform: translate(0px, 43px);
+  height: 30rem;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   background-image: url(../Imágenes/nivel1.jpg);
@@ -480,6 +539,7 @@ body p {
   background-position: center;
   background-size: cover;
   border-bottom: double white 10px;
+  border-top: white solid 10px;
 }
 .programaspag .nivelUno .intensivo1 {
   display: flex;
@@ -496,13 +556,18 @@ body p {
   padding: 3px;
   margin: 5px;
   border-radius: 5px;
+  transition: all 0.5s;
+}
+.programaspag .nivelUno .intensivo1 .temarioUno:hover {
+  transform: scale(1.05, 1.05);
 }
 .programaspag .nivelUno .intensivo1 h3, .programaspag .nivelUno .intensivo1 body p, body .programaspag .nivelUno .intensivo1 p {
   color: rgb(59, 59, 59);
+  font-size: 2rem;
 }
 .programaspag .nivelUno .intensivo1 li {
   color: rgb(59, 59, 59);
-  font-size: 12px;
+  font-size: 14px;
   list-style: lower-greek;
 }
 .programaspag .tituloInt1 {
@@ -512,9 +577,7 @@ body p {
 }
 .programaspag .nivelDos {
   grid-area: nivelDos;
-  padding-top: 40px;
-  height: 34rem;
-  transform: translate(0px, 43px);
+  height: 30rem;
   display: flex;
   flex-flow: row wrap;
   background-image: url(../Imágenes/nivel2.jpg);
@@ -538,13 +601,18 @@ body p {
   padding: 3px;
   margin: 5px;
   border-radius: 5px;
+  transition: all 0.5s;
+}
+.programaspag .nivelDos .intensivo1 .temarioDos:hover {
+  transform: scale(1.05, 1.05);
 }
 .programaspag .nivelDos .intensivo1 .temarioDos h3, .programaspag .nivelDos .intensivo1 .temarioDos body p, body .programaspag .nivelDos .intensivo1 .temarioDos p {
   color: rgb(59, 59, 59);
+  font-size: 2rem;
 }
 .programaspag .nivelDos .intensivo1 .temarioDos li {
   color: rgb(59, 59, 59);
-  font-size: 12px;
+  font-size: 14px;
   list-style: lower-greek;
 }
 
@@ -676,6 +744,64 @@ body p {
   height: 3rem;
 }
 
+@media (max-width: 1080px) {
+  .programas {
+    height: 50rem;
+  }
+  .amigos {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding-top: 4rem;
+  }
+  .amigos .partners {
+    height: 80%;
+  }
+  .testimonios {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding-top: 4rem;
+    padding-right: 5px;
+  }
+  .testimonios .partners {
+    padding-top: 2rem;
+    height: 65%;
+  }
+}
+@media (max-width: 768px) {
+  .cajaPrincipal {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    height: 31rem;
+  }
+  .cajaPrincipal .cajaTitulo .slogan {
+    font-size: 1rem;
+  }
+  .cajaPrincipal .cajaTitulo h1, .cajaPrincipal .cajaTitulo body h2, body .cajaPrincipal .cajaTitulo h2 {
+    font-size: 3rem;
+  }
+  .cajaPrincipal .logoTitulo {
+    height: 10rem;
+  }
+  .testimonios {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    padding-right: 5px;
+  }
+  .testimonios .partners {
+    padding-top: 2rem;
+    height: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .programas .cuadrosProgram {
+    justify-content: center;
+  }
+  .programas img {
+    height: 10rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -690,4 +816,6 @@ body p {
   border-radius: 5px;
   font-family: "Raleway";
   padding: 5px;
+  height: 2.7rem;
+  width: 6rem;
 }/*# sourceMappingURL=estilo.css.map */
