@@ -152,20 +152,6 @@ body p {
   font-size: 1rem;
 }
 
-.index {
-  /* display: grid;
-   grid-template-areas:
-       "navegador navegador navegador navegador"
-       "cajaPrincipal cajaPrincipal cajaPrincipal cajaPrincipal"
-       "separadorwaves separadorwaves separadorwaves separadorwaves"
-       "programas programas programas programas"
-       "calendario calendario calendario calendario"
-       "amigos amigos testimonios testimonios"
-       "contacto contacto contacto contacto"
-       "footer footer footer footer"
-   ;*/
-}
-
 .cajaPrincipal {
   grid-area: cajaPrincipal;
   position: relative;
